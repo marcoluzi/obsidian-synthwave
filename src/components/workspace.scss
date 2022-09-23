@@ -1,0 +1,51 @@
+.workspace-ribbon,
+.status-bar,
+.workspace-ribbon.is-collapsed {
+	background-color: $dark-purple;
+}
+
+.workspace-tabs .workspace-leaf {
+	background-color: $medium-purple;
+}
+
+.workspace-leaf-resize-handle {
+	border-color: $ghost-purple;
+
+	&:hover {
+		border-color: $dark-pink;
+	}
+}
+
+.workspace-ribbon.mod-right.is-collapsed {
+	border-left-color: $dark-purple;
+}
+
+.workspace-tab-header-container,
+.workspace-tab-header-inner,
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+	background-color: $dark-purple;
+}
+
+.workspace-tab-container-before.is-before-active,
+.workspace-tab-container-after.is-after-active,
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active {
+	background-color: $medium-purple;
+}
+
+.workspace-tab-header.is-active {
+	.workspace-tab-header-inner {
+		background-color: $medium-purple;
+	}
+}
+
+.workspace-tab-container-before.is-before-active {
+	display: none;
+}
+
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+	border-radius: 0;
+}

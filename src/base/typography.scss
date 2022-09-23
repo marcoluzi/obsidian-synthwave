@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+body {
+	--font-text-theme: 'Archivo', 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	--font-editor-theme: 'Archivo', 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	--font-interface-theme: 'Archivo', 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+@each $style-type, $value in $header-styles {
+	$font-size: map-get($value, 'font-size');
+	$letter-spacing: map-get($value, 'letter-spacing');
+
+	h#{$style-type},
+	.markdown-rendered h#{$style-type},
+	.HyperMD-header-#{$style-type},
+	.HyperMD-list-line .cm-header-#{$style-type} {
+		font-size: $font-size;
+		letter-spacing: $letter-spacing;
+	}
+}
+
+a,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.markdown-rendered .internal-link {
+	color: $light-red;
+	text-decoration: none;
+
+	&:hover {
+		color: $pink;
+		text-decoration: underline;
+	}
+}
+
+.markdown-rendered hr {
+	border-color: $ghost-purple;
+}
+
+.workspace-tabs .workspace-leaf.mod-active {
+	border-color: $dark-pink;
+}

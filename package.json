@@ -1,0 +1,17 @@
+{
+  "name": "obsidian-synthwave",
+  "version": "1.0.0",
+  "description": "An Obsidian Theme inspired by robb0wen's SynthWave '84 Theme.",
+  "author": "Marco Luzi",
+  "license": "MIT",
+  "scripts": {
+    "watch": "mix watch",
+    "prod": "mix --production"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.54.7",
+    "sass-loader": "^12.1.0"
+  }
+}

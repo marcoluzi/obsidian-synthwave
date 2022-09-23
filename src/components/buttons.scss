@@ -1,0 +1,9 @@
+button,
+.markdown-rendered button.copy-code-button {
+	background-color: $medium-purple;
+
+	&:hover {
+		background-color: $dark-pink;
+		color: var(--text-normal);
+	}
+}
