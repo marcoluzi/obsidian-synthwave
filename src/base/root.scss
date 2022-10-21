@@ -37,3 +37,8 @@ $header-styles: (
 		'letter-spacing': 0.3px,
 	),
 );
+
+.theme-dark {
+	--background-primary: #{$light-purple};
+	--interactive-normal: #{$ghost-purple};
+}

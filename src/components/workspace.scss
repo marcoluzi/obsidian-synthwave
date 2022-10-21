@@ -1,11 +1,18 @@
 .workspace-ribbon,
 .status-bar,
-.workspace-ribbon.is-collapsed {
+.workspace-ribbon.mod-left.is-collapsed,
+.workspace-ribbon.mod-left:before,
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
 	background-color: $dark-purple;
 }
 
-.workspace-tabs .workspace-leaf {
+.workspace-tabs .workspace-leaf,
+.mod-root .workspace-tabs .workspace-leaf {
 	background-color: $medium-purple;
+}
+
+.workspace-split.mod-root .workspace-leaf.mod-active .view-header {
+	margin: 0;
 }
 
 .workspace-leaf-resize-handle {
@@ -32,8 +39,11 @@
 .workspace-tab-container-before.is-before-active,
 .workspace-tab-container-after.is-after-active,
 .workspace-tab-header.is-before-active,
-.workspace-tab-header.is-after-active {
-	background-color: $medium-purple;
+.workspace-tab-header.is-after-active,
+.workspace-tab-header.is-active,
+.workspace-tab-header.is-active,
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+	background-color: $light-purple;
 }
 
 .workspace-tab-header.is-active {
@@ -46,6 +56,22 @@
 	display: none;
 }
 
+.vertical-tab-header {
+	background-color: $medium-purple;
+}
+
 .workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
 	border-radius: 0;
+}
+
+input[type='text'],
+input[type='search'],
+textarea {
+	background-color: $dark-purple;
+}
+
+.card,
+.suggestion-container.mod-search-suggestion,
+.suggestion-container.mod-search-suggestion .suggestion {
+	background-color: $dark-purple;
 }
