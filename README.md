@@ -3,7 +3,7 @@
 	<p><b>An Obsidian Theme that brings the 80's into your Notes.</b></p>
 </div>
 
-![Header Image](/README-images/915x290.png?raw=true 'Header Image')
+![Header Image](https://raw.githubusercontent.com/marcoluzi/obsidian-synthwave/main/README-images/header.png 'Header Image')
 
 ## About
 
