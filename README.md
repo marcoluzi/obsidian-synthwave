@@ -11,7 +11,7 @@ This theme is inspired by [robb0wen's](https://github.com/robb0wen) [SynthWave '
 
 ## Installation
 
-Once the PR is merged this theme will be available in the Obsidian theme library. If you want to install this theme manually please follow these steps:
+This theme is available in the Obsidian theme library. If you want to install this theme manually please follow these steps:
 
 1. Click on the Settings symbol on the lower left side of Obsidian
 2. Click on the Appearance tab
