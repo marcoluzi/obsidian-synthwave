@@ -1,0 +1,15 @@
+input[type='text'] {
+	&:active,
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+select:focus,
+.dropdown:focus {
+	box-shadow: none;
+}
+
+.checkbox-container:focus-within {
+	outline-width: 1px;
+}
