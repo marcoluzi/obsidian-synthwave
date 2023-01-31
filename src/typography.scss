@@ -1,0 +1,18 @@
+@function pow($base, $exp) {
+	$result: 1;
+	@for $i from 1 through $exp {
+		$result: $result * $base;
+	}
+	@return $result;
+}
+
+$base-font-size: 16px;
+$headings: (1, 2, 3, 4, 5, 6);
+$font-size: $base-font-size * pow(1.2, length($headings));
+
+@each $level in $headings {
+	.HyperMD-header-#{$level} {
+		--h#{$level}-size: #{$font-size};
+	}
+	$font-size: $font-size / 1.2;
+}
