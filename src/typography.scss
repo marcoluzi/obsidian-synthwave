@@ -8,11 +8,16 @@
 
 $base-font-size: 16px;
 $headings: (1, 2, 3, 4, 5, 6);
-$font-size: $base-font-size * pow(1.2, length($headings));
+$font-size: $base-font-size * pow(1.15, length($headings));
 
 @each $level in $headings {
 	.HyperMD-header-#{$level} {
 		--h#{$level}-size: #{$font-size};
 	}
-	$font-size: $font-size / 1.2;
+
+	.markdown-rendered h#{$level} {
+		font-size: $font-size;
+	}
+
+	$font-size: $font-size / 1.15;
 }
